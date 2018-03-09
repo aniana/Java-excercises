@@ -25,11 +25,11 @@ public class Main {
 		
 	}
 	/** 
-	* Method creat a new object with given argument and add it to the list of ordered items
-	* @param nameOfItem it's name of the ordered position
-	* @param amount it's amount of the ordered item
+	* Method creates a new object with given argument and adds it to the list of ordered items
+	* @param nameOfItem it's a name of the ordered position
+	* @param amount it's an amount of the ordered item
 	* @param price it's a price of ordered position
-	* @param firstOrder it's an object of class order which helps to add new object to the list
+	* @param firstOrder it's an object of class order which helps to adds new object to the list
 	*/
 	
 	public static void createObject(String nameOfItem, int amount, double price, Order firstOrder) {
@@ -39,8 +39,8 @@ public class Main {
 		//position.calculateValueWithDiscount();
 	}
 	/**
-	 * this method write object to the file
-	 * @param o it is an object which will be write to the file 
+	 * this method write an object to the file
+	 * @param o it is an object which will be written to the file 
 	 * @param nameFile it's a name of file
 	 * @throws IOException signals that an I/O exception of some sort has occurred. It is the general class of exceptions
 	 */
@@ -54,8 +54,8 @@ public class Main {
 	}
 	
 	/**
-	 * this method helps load written file with objects
-	 * @param nameFile it's a name of create file
+	 * this method loads object from file
+	 * @param nameFile it's a name of created file
 	 * @return it returns written objects
 	 * @throws IOException signals that an I/O exception of some sort has occurred. It is the general class of exceptions
 	 */

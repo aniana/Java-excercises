@@ -5,7 +5,7 @@
 import java.io.Serializable;
 
 /**
- * This class create all features of ordered position.
+ * This class creates all features of ordered position.
  * It cointains method which calculate the discount if the amount of items exceed 5
  *
  */
@@ -22,9 +22,9 @@ public class Position implements Serializable{
 	
 	/**
 	 * class constructor
-	 * @param nameOfItem sets to name of the position 
-	 * @param amount sets value to amount of the item
-	 * @param price sets value to price of the item
+	 * @param nameOfItem sets the name of the position 
+	 * @param amount sets value the amount of the item
+	 * @param price sets value the price of the item
 	 */
 	public Position(String nameOfItem, int amount, double price) {
 		this._nameOfItem = nameOfItem;
@@ -34,7 +34,7 @@ public class Position implements Serializable{
 
 	
 	/**
-	 * method caculate total price ordered position considering its amount
+	 * method caculates total price of ordered position considering its amount
 	 * @return value of ordered position
 	 */
 	public double calculateValue() {
@@ -42,8 +42,8 @@ public class Position implements Serializable{
 	}
 
 	/**
-	 * method readout all features ordered position
-	 * @return string with name, price, amount and total value. if th
+	 * method readouts all features of ordered position
+	 * @return string with name, price, amount and total value. If a discount is required, the value after the discount is also displayed
 	 */
 	
 	public String toString() {
@@ -101,11 +101,11 @@ public class Position implements Serializable{
 	}
 	
 	/**
-	 * method calculate total value with discount if the amount of the position is greater than 5
+	 * method will calculate total value with discount if the amount of the position is greater than 5
 	 * if amount of item is greater than 5 and less or equal than 10 the discount is 5%
 	 * if amount of item is greater than 10 and less or equal than 20 the discount is 10%
 	 * if amount of item is greater than 20 the discount is 15%
-	 * @return method return calculate value with or without discount
+	 * @return method return calculated value with or without discount
 	 *
 	 */
 	public double calculateValueWithDiscount() {

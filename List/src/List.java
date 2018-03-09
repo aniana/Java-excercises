@@ -19,8 +19,8 @@ public class List {
 	private int _size = -1;
 	
 	/**
-	 * Class constructor. It attribute capacity to the array
-	 * @param capacity it's attribute to the size of array
+	 * Class constructor. It attributes capacity of the array
+	 * @param capacity. It's attributed to the size of the array
 	 */
 
 	public List(int capacity) {
@@ -28,8 +28,8 @@ public class List {
 		_numbers = new int[_capacity];
 	}
  /**
-  * This method add new element to array. When the list is full message is displayed
-  * @param element it's a number which will be add to the array
+  * This method adds new element to array. When the list is full, a message is displayed
+  * @param element. It's a number which will be added to the array
   */
 	public void addElement(int element) {
 		_size += 1;
@@ -39,9 +39,9 @@ public class List {
 	}
 
 	/**
-	 * This method is looking for given element in an array.
-	 * @param element it's a number which is looking for in an array
-	 * @return method returns index of the searched number or -1 if the number doesnt occure
+	 * This method searches in an array for an element given as an argument.
+	 * @param element. It's a number which is searched in an array
+	 * @return method returns an index of the searched number or -1 if the number doesn't occure
 	 */
 	public int find(int element) {
 
@@ -59,7 +59,7 @@ public class List {
 		return 0;
 	}
 	/**
-	 * Method writes all numbers which contains the array 
+	 * Method writes all numbers which the array contains  
 	 */
 	public void elements() {
 		for (int i = 0; i <= _size; i++) {
@@ -68,7 +68,7 @@ public class List {
 	}
 
 	/**
-	 * Method writes all features an array(size, capacity) with all elements located in a list 
+	 * Method writes all features of the array(size, capacity) with all elements located in a list 
 	 */
 	
 	public void write() {
@@ -79,7 +79,7 @@ public class List {
 
 	/**
 	 * This method removes the first occurrence of a number given as a parameter if it is on the list, i.e. if the number appears more than once, only the first occurrence is deleted 
-	 * @param element it's a searched number
+	 * @param element. It's a searched number
 	 */
 	
 	public void removeFirst(int element) {
@@ -103,8 +103,8 @@ public class List {
 	}
  
 	/**
-	 * Method remove all elements repeating in the list.
-	 * After execut this method there should be only single number, without repetitions
+	 * Method remove all repeating elements  in the list.
+	 * After execution of this method there should be only single number, without repetitions
 	 */
 	public void removeRepeating() {
 		for (int i = 0; i <= _size - 1; i++) {
@@ -125,7 +125,7 @@ public class List {
 		System.out.println("\n"+_size);
 	}
 	/**
-	 * This method revers the list. First element becomes last, last becomes firs and so on
+	 * This method reverses the list. First element becomes last, last becomes firs and so on
 	 * 
 	 */
 	public void revers() {
@@ -139,8 +139,8 @@ public class List {
 	}
 
 	/**
-	 * This method write all array elements to the file
-	 * @param nameFile it's a name of the file
+	 * This method writes all array elements to the file
+	 * @param nameFile. It's a name of the file
 	 * @throws IOException signals that an I/O exception of some sort has occurred. It is the general class of exceptions
 	 */
 	public void writeToFile(String nameFile) throws IOException {

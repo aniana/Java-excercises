@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		List newList = new List(6);
-		newList.addElement(2);
-		newList.addElement(2);
+		newList.addElement(1);
+		newList.addElement(4);
 		newList.addElement(3);
 		newList.addElement(2);
 		newList.addElement(2);
