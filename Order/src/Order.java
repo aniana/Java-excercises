@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 
 public class Order implements Serializable{
-		
+	
 	/**
 	 * This class is a list with ordered items. 
 	 * List allows adding new position, editing it and removing. 
