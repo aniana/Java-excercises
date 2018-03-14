@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class Order implements Serializable{
 		
 	/**
-	 * This class s a list with ordered items. 
-	 * List allows to add new position, edit it and remove. 
+	 * This class is a list with ordered items. 
+	 * List allows adding new position, editing it and removing. 
 	 * Methods in this class calculate total value of the order, increase amount of the position by adding given amount and readout all position with total price
 	 */
 	private static final long serialVersionUID = 1L;
@@ -40,7 +40,7 @@ public class Order implements Serializable{
 	/**
 	 * method increases amount of position with given index
 	 * @param amount increases the amount of position
-	 * @param indeks is an index item which amount is increasing
+	 * @param index is an item index  which amount is increasing
 	 */
 	public void increaseAmount(int amount, int index){
 		list.get(index).setAmount(list.get(index).getAmount() + amount);
@@ -48,9 +48,9 @@ public class Order implements Serializable{
 
 	
 	/**
-	 * method which adds the given position to orders 
-	 * method will append an object if it is not already in the array 
-	 * otherwise method increase its amount
+	 * method which adds the given position to the orders 
+	 * method  will append an object if it is not already in the array 
+	 * otherwise method increases its amount
 	 * @param p is an ordered item
 	 */
 	public void addPosition(Position p) {
@@ -71,7 +71,7 @@ public class Order implements Serializable{
 	/**
 	 * method calculate value of position (item)
 	 * if the amount is greater than 5 it calculates the order value of a given item with a discount which depends on the number of pieces
-	 * @return all ordering items with total value
+	 * @return method returns all ordering items with total value
 	 */
 	public double calculateValue() {
 		double sum = 0;
@@ -84,9 +84,9 @@ public class Order implements Serializable{
 	}
 	
 	/**
-	 * method readout all order position with summing value
+	 * method readout all order positions with summing values
 	 * @see java.lang.Object#toString()
-	 * @return a list of order items and the total value of the order
+	 * @return method returns a list of ordered items and the total value of the order
 	 */
 	public String toString() {
 		String names = "";
@@ -99,8 +99,8 @@ public class Order implements Serializable{
 	
 	
 	/**
-	 * method remove position with given index
-	 * @param index it is position index which will be remove
+	 * method removes position with given index
+	 * @param index. It is index of position  which will be remove
 	 */
 	
 	public void removePosition(int index){
@@ -110,7 +110,7 @@ public class Order implements Serializable{
 	
 	/**
 	 * method allows to edit the selected order item
-	 * @param index it is position index where we want edit name, amount or price
+	 * @param index. It is position index where we want to edit name, amount or price
 	 */
 	public void editPosition(int index){
 		System.out.println("Set new name of item, amount of this and its price.");

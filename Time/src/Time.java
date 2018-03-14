@@ -9,15 +9,15 @@ public class Time {
 
 	/**
 	 * This class is used to remember given houres and minutes. 
-	 * It can appends current period of time to previous and subtracts it. 
+	 * It can append current period of time to previous and subtract it. 
 	 * There is also a method which multiples current period of the time by the given multiplier
 	 */
 	private int _hours;
 	private int _minutes;
 /**
  * Class constructor.
- * @param hours it's attribute to the hours
- * @param minutes it's attribute to the minutes. If there are more than 60 minutes, their value is divided by 60. 
+ * @param hours. It's attributed to the hours
+ * @param minutes. It's attributed to the minutes. If there are more than 60 minutes, their value is divided by 60. 
  * The result is added to the value of hours and the rest is the value of minutes
  */
 	public Time(int hours, int minutes) {
@@ -31,10 +31,10 @@ public class Time {
 		}
 	}
 	/** 
-	 * Class constructor which based on the given string (as _h _ min)  sets the value of houres and minutes.
+	 * Class constructor which sets the value of houres and minutes based on the given string (as _h _ min)  .
 	 * This constructor divides given string into parts and takes only first and third components which are the hours and minutes
 	 * constructor converts the string to an int values
-	 * @param time it's a period of time given by users
+	 * @param time. It's a period of the time given by user
 	 */
 	public Time(String time) {
 		String[] temp;
@@ -51,8 +51,8 @@ public class Time {
 		}
 	}
 	/**
-	 * This method write given period of time
-	 * @return period of time as a string
+	 * This method fills out given period of the time
+	 * @return Method returns period of the time as a string
 	 */
 	public String toString(){
 		return String.format( "%s h %s min ",_hours, _minutes);
@@ -92,11 +92,11 @@ public class Time {
 	}
 
 	/**
-	 * This method appends given period of time to the previous one
+	 * This method appends given period of the time to the previous one
 	 * If the number of minutes obtained after adding is greater than 60  their value is divided by 60. 
 	 * The result of division is added to the value of hours and the rest is the value of minutes
-	 * @param addTime it's a new period of time given by user which is adds to previous periods
-	 * @return new object which is a new increases period
+	 * @param addTime. It's a new period of time given by user which is added to previous periods
+	 * @return Method returns new object which is a new increased period
 	 */
 	public Time addTime(Time addTime){
 		Time newTime = new Time(_hours+addTime._hours,_minutes+addTime._minutes);
@@ -113,8 +113,8 @@ public class Time {
 	
 	/**
 	 * This method works as the same as previous method called addTime, but given period is subtracts from previous period
-	 * @param subTime it's an object being a period of time which will be subtract
-	 * @return this method return new time which is difference between current and previous period
+	 * @param subTime. It's an object being a period of time which will be subtract
+	 * @return this method returns new time which is difference between current and previous period
 	 */
 	
 	public Time subTime(Time subTime){
@@ -131,9 +131,9 @@ public class Time {
 	}
 	
 	/**
-	 * This method multiplies the period of the time by a given by user multiplier
-	 * @param multiplier it's a integer number by which the period of time is to be multiplied
-	 * @return it return new period of the time which is the result of multiply obtained by multiplying by given integer
+	 * This method multiplies the period of the time by multiplier given by user 
+	 * @param multiplier. It's an integer number by which the period of time is to be multiplied
+	 * @return it returns new period of the time which is the result of multiply obtained by multiplying by given integer
 	 */
 	public Time multiTime(int multiplier){
 		
@@ -149,9 +149,9 @@ public class Time {
 	}
 	
 	/** 
-	 * This method adds specific number of periods of time sets in the array
-	 * @param array it's an array with given elements by user in Main class
-	 * @param count it tells how many elements of the array should be added from the beginning
+	 * This method adds specific number of period of the time sets in the array
+	 * @param array. It's an array with elements given by user in Main class
+	 * @param count. It tells how many elements of the array should be added counting from the beginning of the array
 	 * @return it returns an object which is a new period of the time obtained by adding specific number of elements
 	 */
 	public static Time append(Time [] array, int count){
