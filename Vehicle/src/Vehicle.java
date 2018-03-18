@@ -24,13 +24,13 @@ public class Vehicle {
 	/**
 	 * Class constructor. 
 	 * @param weight. It is weight specific vehicle 
-	 * @param numberOfWheels. It is an amount of wheels specigic vehicle
+	 * @param numberOfWheels. It is an amount of wheels of specific vehicle
 	 * @param maxOfSpeed. It is speed which specific vehicle could obtain
 	 * @param maxAcceleration. It is max acceleration assigned to specific vehicle
 	 * @param name. It is a name of adds vehicle
-	 * @param height. It is height specific vehicle
-	 * @param length.It is length specific vehicle 
-	 * @param width. It is width specific vehicle
+	 * @param height. It is height of specific vehicle
+	 * @param length.It is length of specific vehicle 
+	 * @param width. It is width of specific vehicle
 	 * @param state. State indicates whether the vehicle is broken or not
 	 */
 	public Vehicle(double weight, int numberOfWheels, double maxOfSpeed, double maxAcceleration, String name, 
@@ -48,7 +48,7 @@ public class Vehicle {
 
 	
 	/**
-	 * This method written statement that vheicle works good or not
+	 * This method writes statement that vheicle works good or not
 	 * @param state. It takes the true (if it works good) or false if isn't
 	 * @return true or false
 	 */
@@ -130,7 +130,7 @@ public class Vehicle {
 	
 	
 	/**
-	 * This method written all features of specific vehicle
+	 * This method writes all features of specific vehicle
 	 * @return. It returns string with name of vehicle, it's weight, height and so on
 	 */
 	public String getString(){

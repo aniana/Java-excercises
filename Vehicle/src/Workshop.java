@@ -23,7 +23,7 @@ public class Workshop extends VehicleList {
 	/** This method adds object with specific index to the list with broken vehicle. 
 	 * If it is broken it "repairs" the vehicle and removes it from workshop so from list too
 	 * @param index. It is vehicle index in the list
-	 * @throws IndexOutOfBoundsException. It catches mistakes for example if object with given index doesn't exist
+	 * @throws IndexOutOfBoundsException. It catches error when object with given index doesn't exist
 	 */
 	public void repair(int index) throws IndexOutOfBoundsException {
 		try {

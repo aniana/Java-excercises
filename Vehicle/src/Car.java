@@ -2,7 +2,7 @@
 public class Car extends Vehicle {
 
 	/**
-	 * This is class constructor with static parameters: weight,  number of wheels, max od speed and max acceleration.
+	 * This is class constructor with fixed parameters: weight,  number of wheels, max od speed and max acceleration.
 	 * @param name. It is name of car
 	 * @param state. State indicates whether the car is broken or not
 	 */
@@ -12,7 +12,7 @@ public class Car extends Vehicle {
 	}
 
 	/**
-	 * This method written statement that vehicle works good or not
+	 * This method writes statement that vehicle works good or not
 	 * @param state. It takes the true (if it works good) or false if isn't
 	 * @return true or false
 	 */

@@ -24,7 +24,7 @@ public class Parking extends VehicleList {
 
 	
 	/* 
-	 * This method adding vehicles to the list with vehicles with specific dimensions. 
+	 * This method adds vehicles to the list with vehicles with specific dimensions. 
 	 * If vehicle meets requirements it can be added to the list
 	 */
 	
